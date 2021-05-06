@@ -6,11 +6,28 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=3
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "Item",
+"language": "GDScript",
+"path": "res://behaviors/Item.gd"
+}, {
+"base": "Reference",
+"class": "Role",
+"language": "GDScript",
+"path": "res://behaviors/Role.gd"
+} ]
+_global_script_class_icons={
+"Item": "",
+"Role": ""
+}
 
 [application]
 
 config/name="galemon"
+run/main_scene="res://scenes/Entry.tscn"
 config/icon="res://assets/icon.png"
 
 [rendering]
